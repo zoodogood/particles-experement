@@ -3,8 +3,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 canvas {
-  background-color: #ffdd33;
+  background-color: #ffd033;
 }
