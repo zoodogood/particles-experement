@@ -8,6 +8,7 @@ class Scene {
     
     this.canvas.width  = `${ window.innerWidth  }px`;
     this.canvas.height = `${ window.innerHeight }px`;
+    console.log(this.canvas);
     
     this.ctx = this.canvas.getContext("2d");
   }
