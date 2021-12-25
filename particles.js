@@ -28,10 +28,10 @@ class Scene {
   
   #frame(width, height, i = 0){
    let ctx = this.ctx;
-   ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-   ctx.rect(40 + (Math.sin(i) + 1) * this.canvas.width / 2, 40, 70, 70);
+   ctx.clearRect(0, 0, width, height);
+   ctx.rect(40 + Math.sin(i) * this.canvas.width, 40, 70, 70);
    ctx.fill();
-   window.requestAnimationFrame( this.#myFrame, ++i ); 
+   window.requestAnimationFrame( () => this.#myFrame(++i), this.canvas ); 
   }
   
   
