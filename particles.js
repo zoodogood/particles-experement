@@ -3,6 +3,8 @@ const
 
 
 class Scene {
+  #myFrame;
+  
   constructor( querySelector = "canvas" ){
     this.canvas = document.querySelector(querySelector);
     this.#setSize( this.canvas.offsetWidth, this.canvas.offsetHeight );
