@@ -15,7 +15,7 @@ class Scene {
   
   
   init(){
-    this.#myFrame = this.#frame.bind(this, width, height);
+    this.#myFrame = this.#frame.bind(this, this.canvas.width, this.canvas.height);
     this.#myFrame();
   }
   
