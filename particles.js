@@ -10,7 +10,20 @@ class Scene {
     
     this.ctx = this.canvas.getContext("2d");
   }
-
+  
+  
+  init(){
+    this.#frame
+  }
+  
+  
+  #frame(){
+   let ctx = this.ctx;
+   ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
+   ctx.rect(40, 40, 70, 70);
+   ctx.fill();
+   window.requestAnimationFrame( this.#frame ); 
+  }
 }
 
 
