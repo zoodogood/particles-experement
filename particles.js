@@ -29,11 +29,11 @@ class Scene {
   #frame(width, height, i = 0){
    let ctx = this.ctx;
    ctx.clearRect(0, 0, width, height);
-   console.log(width, height);
-   ctx.rect(Math.sin(90) * this.canvas.width, 40, 70, 70);
+   ctx.rect(Math.sin(i) * this.canvas.width, 40, 70, 70);
+   ctx.fillStyle = `${rgb(Math.random()} * 255, 255, 255)`;
    
    ctx.fill();
-   window.requestAnimationFrame( () => this.#myFrame(++i), this.canvas ); 
+   window.requestAnimationFrame( () => this.#myFrame(i + 45), this.canvas ); 
   }
   
   
