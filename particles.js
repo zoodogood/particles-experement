@@ -30,7 +30,7 @@ class Scene {
    let ctx = this.ctx;
    ctx.clearRect(0, 0, width, height);
    ctx.rect(Math.sin(i) * this.canvas.width, 40, 70, 70);
-   ctx.fillStyle = `${rgb(Math.random()} * 255, 255, 255)`;
+   ctx.fillStyle = `rgb${(Math.random() * 255}, 255, 255)`;
    
    ctx.fill();
    window.requestAnimationFrame( () => this.#myFrame(i + 45), this.canvas ); 
