@@ -5,10 +5,11 @@ body {
   align-items: center;
   margin: 0px;
   padding: 0px;
+  background: #031000;
 }
 
 canvas {
-  width: 100vw;
-  height: 100vh;
-  background-color: #ff6017;
+  width: 835px;
+  height: 835px;
+  background-color: #8bf97b;
 }
